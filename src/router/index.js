@@ -36,6 +36,7 @@ import Layout from '@/layout'
 export const constantRoutes = [
   {
     path: '/login',
+    //这里用到了路由懒加载
     component: () => import('@/views/login/index'),
     hidden: true
   },
@@ -49,11 +50,14 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
+    //一访问‘/’就会重定向到dashboard
     redirect: '/dashboard',
     children: [{
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
+      //meta中的title是页面展示的名字 icon是名字前面的图标
+      //如：若这里title改为 首页2 则页面展示侧边栏里首页更名为首页2
       meta: { title: '首页', icon: 'dashboard' }
     }]
   },
@@ -110,9 +114,12 @@ export const asyncRoutes = [
 },
 {
   path: '/product',
+  //一级路由不需要配置路径
   component: Layout,
   name: 'Product',
+  //meta中的title是页面展示的名字 icon是名字前面的图标
   meta: { title: '商品管理', icon: 'el-icon-goods' },
+  //二级路由
   children: [
     {
       path: 'trademark',

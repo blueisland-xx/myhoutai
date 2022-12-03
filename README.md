@@ -2,7 +2,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/wearetheone777/houtaiguanli.git
+git clone https://github.com/blueisland-xx/myhoutai.git
 
 # 进入项目目录
 cd houtaiguanli
@@ -23,7 +23,7 @@ npm run dev
 build
      ----index.js webpack配置文件【很少修改这个文件】
 mock
-    ----mock数据的文件夹【模拟一些假的数据mockjs实现的】，因为咱们实际开发的时候，利用的是真是接口
+    ----mock数据的文件夹【模拟一些假的数据mockjs实现的】，因为实际开发的时候，用的是真实的接口
 
 node_modules
      ------项目依赖的模块
@@ -32,7 +32,7 @@ public
      ------ico图标,静态页面，publick文件夹里面经常放置一些静态资源，而且在项目打包的时候webpack不会编译这个文件夹，原封不动的打包到dist文件夹里面
 
 src
-    -----程序员源代码的地方
+    -----源代码文件夹
     ------api文件夹:涉及请求相关的
     ------assets文件夹：里面放置一些静态资源（一般共享的），放在aseets文件夹里面静态资源，在webpack打包的时候，会进行编译
     ------components文件夹：一般放置非路由组件获取全局组件
@@ -46,7 +46,7 @@ src
 
 App.vue:根组件
 main.js：入口文件
-permission.js:与导航守卫先关、
+permission.js:与导航守卫相关
 settings：项目配置项文件
 .env.development
 .env.producation
@@ -62,10 +62,10 @@ settings：项目配置项文件
 
 ## 登录业务
 
- -----静态组件完成
-  -----书写API（换成真实的接口）
-  -----axios二次封装
-  -----换成真实接口之后需要解决代理跨域问题(解决代理跨域问题)
+-----静态组件完成
+-----书写 API（换成真实的接口）
+-----axios 二次封装
+-----换成真实接口之后需要解决代理跨域问题(解决代理跨域问题)
 
 ![image-20220609120548247](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350092.png)
 
@@ -91,22 +91,22 @@ settings：项目配置项文件
 
 ![image-20220609133253222](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350098.png)
 
-## SPU模块介绍
+## SPU 模块介绍
 
-SPU你可以理解为类
+SPU 你可以理解为类
 
-People类【SPU】
+People 类【SPU】
 实例:【SKU】
-小明:小明  18  男 等等
-小红：小红  88  女 等等
+小明:小明 18 男 等等
+小红：小红 88 女 等等
 
 ![image-20220609133431091](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350099.png)
 
-## SPU管理内容切换
+## SPU 管理内容切换
 
----展示SPU列表结构
-----添加SPU|修改SPU
-----展示添加SKU结构
+---展示 SPU 列表结构
+----添加 SPU|修改 SPU
+----展示添加 SKU 结构
 
 ![image-20220609133555914](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350100.png)
 
@@ -122,13 +122,13 @@ People类【SPU】
 
 ![image-20220609133909578](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350106.png)
 
-## SKu的业务
+## SKu 的业务
 
-SKU的上架与下架操作
+SKU 的上架与下架操作
 
 ![image-20220609134133248](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350107.png)
 
-SKU模块数据的展示
+SKU 模块数据的展示
 
 ![image-20220609134034555](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350108.png)
 

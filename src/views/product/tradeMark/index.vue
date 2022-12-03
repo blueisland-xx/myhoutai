@@ -1,19 +1,19 @@
 <template>
   <div>
     <el-button type="primary" icon="el-icon-plus" style="margin: 10px 0px" @click="showDialog">添加</el-button>
-    <!-- 
-         表格组件 
-         data:表格组件将来需要展示的数据------数组类型
-         border：是给表格添加边框
-         column属性
-         label：显示标题
-         width：对应列的宽度
-         align：标题的对齐方式
-         prop:对应列内容的字段名
-         type:如果设置了索引那么就从一开始
-         border：边框
-         注意1：elementUI当中的table组件，展示的数据是以一列一列进行展示数据
-       -->
+    <!--
+      表格组件
+        data:表格组件将来需要展示的数据------数组类型
+        border：是给表格添加边框
+      column属性
+        label：显示标题
+        width：对应列的宽度
+        align：标题的对齐方式
+        prop:对应列内容的字段名
+        type:如果设置了索引那么就从一开始
+        border：边框
+        注意1：elementUI当中的table组件，展示的数据是以一列一列进行展示数据
+    -->
     <el-table style="width: 100%" border :data="list">
       <el-table-column header-align="center" align="center" label="序号" width="80%" type="index">
       </el-table-column>
@@ -31,8 +31,8 @@
         </template>
       </el-table-column>
     </el-table>
-    <!-- 
-      分页器 
+    <!--
+      分页器
       当前第几页、数据总条数、每一页展示条数、连续页码数
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
@@ -61,6 +61,15 @@
           </el-upload>
         </el-form-item>
       </el-form>
+      <!-- 使用表单验证el-form必须有 ：model=“”，
+        还要有：rules=“rules”，
+        这个rules在data中书写规则，
+        还要有ref，
+        以便在下面整体表单验证拿到用户所填写的信息，
+        而且在每一条需要验证的el-form-item中
+        要用prop=“tmName”来对应所写的规则中的某一条
+      -->
+
 
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>

@@ -79,7 +79,7 @@ export default {
         attrValueList: [
           //属性值，因为属性值可以有多个因此用数组，每一个属性值都是一个对象需要attrId，valueName
         ],
-        categoryId: 0, //三级分类的id
+        categoryId: 0, //三级分类的id 别在data中收集三级分类id 因为对象存储数据是无序的 所以不能在data中获取data中数据
         categoryLevel: 3, //因为服务器也需要区分几级id
       },
     };
@@ -119,6 +119,7 @@ export default {
     },
     //修改某一个属性
     updateAttr(row) {
+      //传过来的row与原本的attrInfo数据结构一样
       this.isShowTable = false;
       //将选中的属性赋值给attrInfo
       //由于数据结构当中存在对象里面套数组，数组里面有套对象，因此需要使用深拷贝解决这类问题

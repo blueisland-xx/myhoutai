@@ -42,6 +42,10 @@ module.exports = {
                 target: 'http://gmall-h5-api.atguigu.cn',
                 pathRewrite: { '^/dev-api': '' },
             },
+            '/prod-api': {
+              target: 'http://gmall-h5-api.atguigu.cn',
+              pathRewrite: { '^/dev-api': '' },
+          },
         },
         //开启mock数据
         after: require('./mock/mock-server.js')
