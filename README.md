@@ -67,7 +67,7 @@ settings：项目配置项文件
 -----axios 二次封装
 -----换成真实接口之后需要解决代理跨域问题(解决代理跨域问题)
 
-![image-20220609120548247](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350092.png)
+![image](https://github.com/blueisland-xx/image-store/blob/master/image/back1.png)
 
 ## 退出登录
 
