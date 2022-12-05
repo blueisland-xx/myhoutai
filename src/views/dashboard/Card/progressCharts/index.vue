@@ -35,7 +35,7 @@ export default {
           color: "cyan",
           //柱状图的宽度
           barWidth: 10,
-          color: "yellowgreen",
+          color: "#6D67E4",
           //背景颜色设置
           showBackground: true,
           //设置背景颜色

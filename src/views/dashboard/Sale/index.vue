@@ -29,38 +29,38 @@
           <ul>
             <li>
               <span class="rindex">0</span>
-              <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span>麦当劳</span>
+              <span class="rvalue">13356</span>
             </li>
             <li>
               <span class="rindex">1</span>
               <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span class="rvalue">11256</span>
             </li>
             <li>
               <span class="rindex">3</span>
-              <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span>瑞幸</span>
+              <span class="rvalue">3756</span>
             </li>
             <li>
               <span>4</span>
-              <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span>茶百道</span>
+              <span class="rvalue">1556</span>
             </li>
             <li>
               <span>5</span>
-              <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span>蜜雪冰城</span>
+              <span class="rvalue">886</span>
             </li>
             <li>
               <span>6</span>
-              <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span>一点点</span>
+              <span class="rvalue">456</span>
             </li>
             <li>
               <span>7</span>
-              <span>肯德基</span>
-              <span class="rvalue">123456</span>
+              <span>粒上皇</span>
+              <span class="rvalue">6</span>
             </li>
           </ul>
         </el-col>
@@ -124,7 +124,7 @@ export default {
           type: "bar",
           barWidth: "60%",
           data: [],
-          color: "yellowgreen",
+          color: "#6F38C5",
         },
       ],
     });
@@ -166,7 +166,7 @@ export default {
               this.title == "销售额"
                 ? this.listState.orderFullYear
                 : this.listState.userFullYear,
-            color: "yellowgreen",
+            color: "#6F38C5",
           },
         ],
       });
@@ -208,7 +208,7 @@ export default {
             type: "bar",
             barWidth: "60%",
             data: this.listState.orderFullYear,
-            color: "yellowgreen",
+            color: "#6F38C5",
           },
         ],
       });

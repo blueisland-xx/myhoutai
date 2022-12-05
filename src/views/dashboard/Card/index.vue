@@ -4,14 +4,14 @@
       <el-col :span="6">
         <el-card>
           <!-- 第一个card -->
-          <Detail title="总销售额" count="¥ 126560">
+          <Detail title="总销售额" count="¥ 126660">
             <template slot="charts">
               <span>周同比5.7% <i class="el-icon-top"></i>
               </span>
               <span>日同比1.6%<i class="el-icon-bottom"></i></span>
             </template>
             <template slot="footer">
-              <span>日销售额￥ 12423</span>
+              <span>日销售额￥ 1223</span>
             </template>
           </Detail>
         </el-card>
