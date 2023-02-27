@@ -5,12 +5,12 @@
 git clone https://github.com/blueisland-xx/myhoutai.git
 
 # 进入项目目录
-cd houtaiguanli
+cd myhoutai
 
 # 安装依赖
 npm install
 
-# 建议不要直接使用 cnpm 安装以来，会有各种诡异的 bug。可以通过如下操作解决 npm 下载速度慢的问题
+# 可以通过淘宝镜像 解决 npm 下载速度慢的问题
 npm install --registry=https://registry.npm.taobao.org
 
 # 启动服务
@@ -52,6 +52,10 @@ settings：项目配置项文件
 .env.producation
 ```
 
+## 接口文档
+- http://39.98.123.211:8170/swagger-ui.html#/
+- http://39.98.123.211:8216/swagger-ui.html
+
 ## 后台路由
 
 ![image-20220609120120695](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350089.png)
@@ -69,27 +73,18 @@ settings：项目配置项文件
 
 ![image](https://github.com/blueisland-xx/image-store/blob/master/image/back1.png)
 
-## 退出登录
+## 首页业务
 
-![image-20220609132522159](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350093.png)
+![image](https://github.com/blueisland-xx/image-store/blob/master/image/index.png)
 
 ## 品牌管理组件
 
-![image-20220609132657102](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350094.png)
+![image](https://github.com/blueisland-xx/image-store/blob/master/image/product.png)
 
 ## 添加品牌与修改品牌
 
-![image-20220609132910174](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350095.png)
-
-![image-20220609132928884](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350096.png)
 
 ## 删除品牌的操作
-
-![image-20220609133045066](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350097.png)
-
-## 获取数据动态的展示三级联动]
-
-![image-20220609133253222](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350098.png)
 
 ## SPU 模块介绍
 
@@ -97,10 +92,6 @@ SPU 你可以理解为类
 
 People 类【SPU】
 实例:【SKU】
-小明:小明 18 男 等等
-小红：小红 88 女 等等
-
-![image-20220609133431091](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350099.png)
 
 ## SPU 管理内容切换
 
@@ -108,64 +99,18 @@ People 类【SPU】
 ----添加 SPU|修改 SPU
 ----展示添加 SKU 结构
 
-![image-20220609133555914](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350100.png)
-
-![image-20220609133651361](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350101.png)
-
-![image-20220609133701958](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350102.png)
-
-![image-20220609133725158](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350103.png)
-
-![image-20220609133757367](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350104.png)
-
-![image-20220609133820236](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350105.png)
-
-![image-20220609133909578](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350106.png)
-
 ## SKu 的业务
 
 SKU 的上架与下架操作
 
-![image-20220609134133248](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350107.png)
-
 SKU 模块数据的展示
-
-![image-20220609134034555](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350108.png)
 
 查看信息
 
-![image-20220609134248715](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350109.png)
-
-## 首页业务
-
-![image-20220609134435858](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350110.png)
-
-![image-20220609134453309](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350111.png)
-
-![image-20220609134507564](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350112.png)
 
 ## 权限管理
 
 权限管理：用户管理、角色管理、菜单管理
 
-![image-20220609134730897](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350113.png)
-
-![image-20220609134746004](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350114.png)
-
-![image-20220609134756026](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350115.png)
-
-![image-20220609134809018](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350116.png)
-
-![image-20220609134823286](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350117.png)
-
-![image-20220609134838325](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350118.png)
-
 ## 菜单管理
 
-![image-20220609134911505](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350120.png)
-
-![image-20220609134924856](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350121.png)
-
-![image-20220609134935013](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350122.png)
-
-![image-20220609134943575](https://150-9155-1312350958.cos.ap-chengdu.myqcloud.com/img202206091350123.png)
